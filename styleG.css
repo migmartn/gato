@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Fondo negro */
+    flex-direction: column;
+    color: #fff; /* Texto blanco */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff; /* Título en blanco */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #fff; /* Celdas blancas */
+    font-size: 2rem;
+    color: #000; /* Texto negro dentro de las celdas */
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #ddd; /* Cambio de color al pasar el mouse, un gris claro */
+}
+
+.status {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #fff; /* Texto del estado en blanco */
+}
+
+#restart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #fff; /* Botón blanco */
+    color: #000; /* Texto del botón negro */
+    border: none;
+    border-radius: 5px;
+}
+
+#restart:hover {
+    background-color: #ddd; /* Botón gris claro al pasar el mouse */
+}
